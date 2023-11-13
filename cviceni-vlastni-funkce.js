@@ -1,12 +1,13 @@
-const h = prompt("Zadej výšku:")
-const w = prompt("Zadej šířku:")
+const width = prompt("Zadej šířku:")
+const height = prompt("Zadej výšku:")
 
-const ellipseArea = (h, w) => {
-    return h * w * Math.PI / 2
+const ellipseArea = (width, height) => {
+    return (width / 2) * (height / 2) * Math.PI
 }
 
 document.body.innerHTML += `
-<p>${ellipseArea(2, 1)}</p>
+<p>${ellipseArea(1, 2)}</p>
+<p>${ellipseArea(2, 2)}</p>
 `
 
 
